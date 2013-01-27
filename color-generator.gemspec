@@ -4,7 +4,7 @@ require "color-generator/version"
 
 Gem::Specification.new do |s|
   s.name        = "color-generator"
-  s.version     = ColorGenerator::VERSION
+  s.version     = ColorGeneratorVersion::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Open North"]
   s.email       = ["info@opennorth.ca"]
