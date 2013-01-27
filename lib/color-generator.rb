@@ -12,7 +12,8 @@ class ColorGenerator
   # @option opts [Float,Integer] :value value in the interval [0, 1], sets the
   #   color representation to HSV
   def initialize(opts = {})
-    @hue = rand
+    random = opts[:seed] ? Random.new(opts[:seed]) : Random.new
+    @hue = random.rand
     @saturation = opts[:saturation].to_f
     if opts.has_key? :lightness
       @mode = :HSL
